@@ -10,4 +10,4 @@ style: [the hidden rules of professional c++ code](https://www.youtube.com/watch
 
 ## open source libraries
 
-bloomberg: [bloomber development environment](https://github.com/bloomberg/bde)
+bloomberg: [bloomberg development environment](https://github.com/bloomberg/bde)
