@@ -7,3 +7,7 @@ functions: [make your functions functional](https://www.fluentcpp.com/2016/11/22
 threading: [concurrency and parallelism with c++17 and c++20](https://www.youtube.com/watch?v=fkqVRzy4JhA)
 
 style: [the hidden rules of professional c++ code](https://www.youtube.com/watch?v=fu6N6JbPOrI)
+
+## open source libraries
+
+bloomberg: [bloomber development environment](https://github.com/bloomberg/bde)
