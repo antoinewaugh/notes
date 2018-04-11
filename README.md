@@ -8,7 +8,10 @@ threading: [concurrency and parallelism with c++17 and c++20](https://www.youtub
 
 style: [the hidden rules of professional c++ code](https://www.youtube.com/watch?v=fu6N6JbPOrI)
 
-organisation: [large scale c++](https://www.youtube.com/watch?v=ASPj9-4yHO0)
+organisation: 
+
+[large scale c++](https://www.youtube.com/watch?v=ASPj9-4yHO0)
+[large scale c++ live-workship](https://www.safaribooksonline.com/library/view/large-scale-c-livelessonsworkshop/9780134049731/)
 
 ## open source libraries
 
