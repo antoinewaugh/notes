@@ -8,10 +8,16 @@ threading: [concurrency and parallelism with c++17 and c++20](https://www.youtub
 
 style: [the hidden rules of professional c++ code](https://www.youtube.com/watch?v=fu6N6JbPOrI)
 
-organisation: 
+design: 
 
+John Lakos Series
 [large scale c++](https://www.youtube.com/watch?v=ASPj9-4yHO0)
+
 [large scale c++ live-workship](https://www.safaribooksonline.com/library/view/large-scale-c-livelessonsworkshop/9780134049731/)
+
+[Advanced Levelization Techniques (part 1 of 3)](https://www.youtube.com/watch?v=QjFpKJ8Xx78)
+[Advanced Levelization Techniques (part 2 of 3)](https://www.youtube.com/watch?v=fzFOLsFASjU)
+[Advanced Levelization Techniques (part 3 of 3)](https://www.youtube.com/watch?v=NrARQ7rHV-c)
 
 ## open source libraries
 
