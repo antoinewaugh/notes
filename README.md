@@ -2,22 +2,30 @@
 
 ## to watch and make notes on
 
-functions: [make your functions functional](https://www.fluentcpp.com/2016/11/22/make-your-functions-functional)
+### functions: 
 
-threading: [concurrency and parallelism with c++17 and c++20](https://www.youtube.com/watch?v=fkqVRzy4JhA)
+[make your functions functional](https://www.fluentcpp.com/2016/11/22/make-your-functions-functional)
 
-style: [the hidden rules of professional c++ code](https://www.youtube.com/watch?v=fu6N6JbPOrI)
+### threading: 
 
-design: 
+[concurrency and parallelism with c++17 and c++20](https://www.youtube.com/watch?v=fkqVRzy4JhA)
 
-John Lakos Series
-[large scale c++](https://www.youtube.com/watch?v=ASPj9-4yHO0)
+### style: 
 
-[large scale c++ live-workship](https://www.safaribooksonline.com/library/view/large-scale-c-livelessonsworkshop/9780134049731/)
+[the hidden rules of professional c++ code](https://www.youtube.com/watch?v=fu6N6JbPOrI)
 
-[Advanced Levelization Techniques (part 1 of 3)](https://www.youtube.com/watch?v=QjFpKJ8Xx78)
-[Advanced Levelization Techniques (part 2 of 3)](https://www.youtube.com/watch?v=fzFOLsFASjU)
-[Advanced Levelization Techniques (part 3 of 3)](https://www.youtube.com/watch?v=NrARQ7rHV-c)
+### design: 
+
+### John Lakos Series
+
+#### Large Scale c++
+- [large scale c++](https://www.youtube.com/watch?v=ASPj9-4yHO0)
+- [large scale c++ live-workship](https://www.safaribooksonline.com/library/view/large-scale-c-livelessonsworkshop/9780134049731/)
+
+#### Advanced Levelization Techniques
+- [Advanced Levelization Techniques (part 1 of 3)](https://www.youtube.com/watch?v=QjFpKJ8Xx78)
+- [Advanced Levelization Techniques (part 2 of 3)](https://www.youtube.com/watch?v=fzFOLsFASjU)
+- [Advanced Levelization Techniques (part 3 of 3)](https://www.youtube.com/watch?v=NrARQ7rHV-c)
 
 ## open source libraries
 
