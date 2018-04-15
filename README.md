@@ -31,3 +31,10 @@
 
 bloomberg: [bloomberg development environment](https://github.com/bloomberg/bde)
 
+## Technique
+
+__underline__ : underline big ideas
+_circle_ : important words or phrases
+*questions*: write questions in margins
+_summarise_: in markdown after completing topic/chapter
+_code_ : write sample project including concepts and/or complete exercises
