@@ -38,3 +38,5 @@ bloomberg: [bloomberg development environment](https://github.com/bloomberg/bde)
 * *questions*: write questions in margins
 * _summarise_: in markdown after completing topic/chapter
 * _code_ : write sample project including concepts and/or complete exercises
+
+Reading technical books should be MORE like a conversation. Highlighting what is interesting and writing questions in the margin.
