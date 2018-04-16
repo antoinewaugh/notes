@@ -16,6 +16,8 @@
 
 ### design: 
 
+_API design for c++_ : Martin Reddy
+
 ### John Lakos Series
 
 #### Large Scale c++
