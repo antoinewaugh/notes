@@ -42,3 +42,7 @@ bloomberg: [bloomberg development environment](https://github.com/bloomberg/bde)
 * _code_ : write sample project including concepts and/or complete exercises
 
 Reading technical books should be MORE like a conversation. Highlighting what is interesting and writing questions in the margin.
+
+## Tidbits:
+
+* @dascandy - 95% of my objects do not have special member definitions - should rely on underlying members to do that (having std::unique_ptr will automatically empose behaviour you may desire etc)
