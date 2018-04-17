@@ -46,3 +46,4 @@ Reading technical books should be MORE like a conversation. Highlighting what is
 ## Tidbits:
 
 * @dascandy - 95% of my objects do not have special member definitions - should rely on underlying members to do that (having std::unique_ptr will automatically empose behaviour you may desire etc)
+* john lakos: move all private methods to static free functions when they only access public accessors. better for encapsulation, also hides private implementation details from header file. 
