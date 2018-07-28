@@ -2,6 +2,14 @@
 
 ## to watch and make notes on
 
+### endiness
+
+https://betterexplained.com/articles/understanding-big-and-little-endian-byte-order/
+
+### sockets:
+
+http://beej.us/guide/bgnet/html/single/bgnet.html#recvman (dated but good)
+
 ### functions: 
 
 [make your functions functional](https://www.fluentcpp.com/2016/11/22/make-your-functions-functional)
