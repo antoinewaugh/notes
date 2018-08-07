@@ -6,6 +6,10 @@
 
 https://youtu.be/WLDT1lDOsb4
 
+### base project setup, google test & benchmark
+
+https://felixmoessbauer.com/blog-reader/include-google-benchmark-test-in-c-project.html
+
 ### endiness
 
 https://betterexplained.com/articles/understanding-big-and-little-endian-byte-order/
