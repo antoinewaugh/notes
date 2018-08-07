@@ -2,6 +2,10 @@
 
 ## to watch and make notes on
 
+### free your functions:
+
+https://youtu.be/WLDT1lDOsb4
+
 ### endiness
 
 https://betterexplained.com/articles/understanding-big-and-little-endian-byte-order/
