@@ -115,11 +115,11 @@ Whilst one of the SBE instances had two log lines regarding RptSeq jump, the oth
 
 As it stands, we have
 
-*) PLV8 currently trading and open on CME
-*) No events being emitted from SBE adapter to the correlator on ANY of the PLV8 nmda channels 
-*) 5 outages similar to this across 2 days
-*) We are seeing a CHANNEL drop out, so if PA drops on channel 382 as does PL.
-*) We are seeing multiple CHANNELS drop out at times, and other times its just one of the many channels we have subscribed
+* PLV8 currently trading and open on CME
+* No events being emitted from SBE adapter to the correlator on ANY of the PLV8 nmda channels 
+* 5 outages similar to this across 2 days
+* We are seeing a CHANNEL drop out, so if PA drops on channel 382 as does PL.
+* We are seeing multiple CHANNELS drop out at times, and other times its just one of the many channels we have subscribed
 
 We would like you to roll back the adapter code to the original , functioning version of apama.9.12 without any of the new config options, and add simply the template change(s).
 
