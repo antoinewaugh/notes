@@ -17,7 +17,6 @@ Looking at our market data recording platform, it is evident that the number of 
 
 The depth has remained unchanged for hours, even though the status has gone from 17 -> 21 -> 4 ->17 which theoretically could be causing a book refresh we still have not recovered from our outage.
 
-*NB:* Trade data is still coming through, and we can see that the last trade price is WILDLY through the current best bid ask. This suggests the data construction may be failing on the NMDA EPL side, as clearly com.apama.md.Trade data is being received.
 
 # Exploring data inbound to correlator
 
