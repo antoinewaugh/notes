@@ -1,7 +1,15 @@
 
 # Exploration into MD outages with new SBE Adapter
 
-It has been observed that we are receiving market data outages across multiple machines which all use the new SBE adpater. Previously an outage like this had been seen once in the past year. We have now seen 5 separate occurences across two days.
+It has been observed that we are receiving repeated market data outages across multiple machines.
+
+These outages started since we updated the apama CME SBE adapter. 
+
+Outages appear to be on a whole channel (i.e. we saw symbols PL and PA which both are on the same channel 384), outages are _not limited to a single channel_ in the sense that we have observed multiple channels depth frozen.
+
+Before the adapter upgrade, we may have had one outage in a year. Since the SBE adapter upgrade we have now seen 5 separate occurences across two days.
+
+
 
 # Market Data Recording
 
@@ -40,7 +48,7 @@ MDR:CME Prices:fut-PL_201810                 0               1        D_PLV8_153
 
 ## Check inbound data is being received on all input queues
 
-At a macro level, we can see inbound com.apama.md.BBA events hitting correlator
+At a macro level, we can see inbound com.apama.md.BBA events hitting correlator for `BBA`, `Trade` and `DD` types.
 
 ```
 
@@ -60,32 +68,12 @@ com.apama.md.BBA(1,1533694577456,"HGU8",27665,7,27670,1,{},{})
 BATCH 980
 com.apama.md.DD(1,1533694576940,"HGU8",[],[com.apama.md.DI(0,27670,2,1,{})],{},{})
 BATCH 980
-com.apama.md.BBA(1,1533694577456,"HGU8",27665,7,27670,2,{},{})
-BATCH 982
-com.apama.md.DD(1,1533694576940,"HGU8",[],[com.apama.md.DI(0,27670,3,1,{})],{},{})
-BATCH 982
-com.apama.md.DD(1,1533694577401,"6CU8",[],[com.apama.md.DI(4,7671.5,33,1,{})],{},{})
-BATCH 982
-com.apama.md.BBA(1,1533694577456,"HGU8",27665,7,27670,3,{},{})
-BATCH 982
-com.apama.md.T(1,1533694577402,"HGU8",27670,1,"","","",{},{})
-BATCH 983
-com.apama.md.DD(1,1533694577401,"6CU8",[],[com.apama.md.DI(0,7669.5,6,1,{})],{},{})
-BATCH 983
-com.apama.md.DD(1,1533694576940,"HGU8",[],[com.apama.md.DI(0,27670,2,1,{})],{"CumulativeTradeVolume":"210"},{})
-BATCH 983
-com.apama.md.BBA(1,1533694577456,"HGU8",27665,7,27670,2,{"CumulativeTradeVolume":"210"},{})
-BATCH 983
-com.apama.md.BBA(1,1533694577459,"6CU8",7669,8,7669.5,6,{},{})
-BATCH 983
-com.apama.md.DD(1,1533694576940,"HGU8",[],[com.apama.md.DI(0,27670,1,1,{})],{},{})
-BATCH 983
 
 ```
 
 ## Check inbound data is being received queues specific to symbol PLV8
 
-First, check command works for a liquid contracts like ES which doesnt currently have a price issue
+First, check queue filtering command works for a liquid contracts like ES which doesn't currently have a price issue
 
 ```
 ^C[apama52@RTVAURCMESERV02 logs]$ engine_receive -c com.apama.input.D_ESU8_1533694576937 -p 15910
@@ -99,9 +87,9 @@ com.apama.md.DD(1,1533694576937,"ESU8",[com.apama.md.DI(0,285050,51,1,{})],[],{}
 
 ```
 
-Now, check PLV8 BBA, Trade and Depth channels respectively - silence.
+The Same command run on the PL BBA, Trade and Depth channels respectively yield zero updates.
 
-During the period that we measured inbound events on the below channels, I actually triggered trades in the live market. This confirms that although real trading and MD events are being triggered by CME the SBE adapter is not emitting any events to the correlator.
+*NB:* During the period that we measured inbound events on the below channels, I actually triggered trades in the live market. This confirms that although real trading and MD events are being triggered by CME the SBE adapter is not emitting any events to the correlator.
 
 ```
 ^C[apama52@RTVAURCMESERV02 logs]$ engine_receive -c com.apama.input.T_PLV8_1533694577425 -p 15910                                                                                                                  
@@ -140,7 +128,12 @@ If you could do this, and send a pre-release we may be able to prevent a product
 
 What are your thoughts?
 
-Possibly a separate issue:
+
+# Separately: 
+
+In addition to the above, we have seen mass outages on the adapter where the Watchdog appears to state the correlator<->SBE adapter has dropped.
+
+I was reluctant to give you this additional information in case it confuses the above because they occur at separate times, but that being said it may be related and help your understanding of the situation?
 
 ```
 [apama@RTVAURCMESERV04 logs]$ less CME_MARKETDATA_20180809_141634.log
