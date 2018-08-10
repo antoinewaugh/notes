@@ -9,15 +9,6 @@ Outages appear to be on a whole channel (i.e. we saw symbols PL and PA which bot
 
 Before the adapter upgrade, we may have had one outage in a year. Since the SBE adapter upgrade we have now seen 5 separate occurences across two days.
 
-
-
-# Market Data Recording
-
-Looking at our market data recording platform, it is evident that the number of updates being received is 0.
-
-The depth has remained unchanged for hours, even though the status has gone from 17 -> 21 -> 4 ->17 which theoretically could be causing a book refresh we still have not recovered from our outage.
-
-
 # Exploring data inbound to correlator
 
 ## Identify Channel - engine_inspect
