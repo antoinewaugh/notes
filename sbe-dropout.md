@@ -26,7 +26,7 @@ Using engine_inspect, we can view the channels currently subscribed, of interest
 
 `BBA_PLV8_1533694577477`
 `T_PLV8_1533694577477`
-'D_PLV8_1533694577424'
+`D_PLV8_1533694577424`
 
 ``` 
 [apama52@RTVAURCMESERV02 logs]$ engine_inspect -x -p 15910 | less
